@@ -1,8 +1,8 @@
 export interface IAddress {
-    street:string;
-    suite:string;
-    city:string;
-    zipcode:string;
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
 }
 
 export interface IUser {
@@ -10,4 +10,11 @@ export interface IUser {
     name: string;
     email: string;
     address: IAddress;
+}
+
+export interface ITodo {
+    userId: number;
+    id: number;
+    title: string;
+    completed: boolean;
 }
