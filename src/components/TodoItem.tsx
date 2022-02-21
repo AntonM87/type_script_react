@@ -3,13 +3,18 @@ import {ITodo} from "../types/types";
 
 interface TodoItemProps {
     todo: ITodo;
+    onClick: (todo: ITodo) => void
 }
 
-const TodoItem: FunctionComponent<TodoItemProps> = ({todo}) => {
+const TodoItem: FunctionComponent<TodoItemProps> = ({todo, onClick}) => {
     return (
-        <div>
-            <input type="checkbox" defaultChecked={todo.completed}/>
-            {todo.id}, {todo.title}
+        <div className='wrapper'>
+            <div className="wrapper">
+                <input type="checkbox" defaultChecked={todo.completed}/>
+                <div className='wrapper' onClick={() => onClick(todo)}>
+                    {todo.id}, {todo.title}
+                </div>
+            </div>
         </div>
     );
 };

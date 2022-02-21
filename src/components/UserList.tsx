@@ -9,9 +9,9 @@ interface UserListProps {
 const UserList: FunctionComponent<UserListProps> = ({users}) => {
     return (
         <div>
-            {users.map(user => <div>
-                <UserItem user={user} key={user.id}/>
-            </div>)}
+            {/*{users.map(user => <div>*/}
+            {/*    <UserItem user={user} key={user.id}/>*/}
+            {/*</div>)}*/}
         </div>
     );
 };

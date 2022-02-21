@@ -6,9 +6,28 @@ body {
         flex-direction: row;
         justify-content: start;
         align-items: center;
+
         p {
           padding-right: 1rem;
         }
+      }
+    }
+
+    .wrapper {
+      width: 40%;
+      border: 1px solid rebeccapurple;
+      cursor: pointer;
+      margin: .5rem 0;
+      padding: .25rem;
+      transition: background linear .2s;
+      &:hover {
+        background: #ececec;
+      }
+      .input-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
       }
     }
   }
